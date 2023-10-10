@@ -16,12 +16,19 @@ public class LinklistBook {
         list.add(b3);
         list.add(b4);
 
-        for(book b: list){
-
-            System.out.println(b.id + ","+ b.name + "," + b.Author + "," + b.publisher + "," + b.qty);
-
-        }
-    }
+         // Print table header
+         System.out.println("+----+-------------+--------------+----------------+-----+");
+         System.out.println("| ID |    Name     |    Author    |    Publisher   | Qty |");
+         System.out.println("+----+-------------+--------------+----------------+-----+");
+ 
+         // Print table data
+         for (book b : list) {
+             System.out.printf("| %2d | %-12s | %-13s | %-14s | %3d |\n", b.id, b.name, b.Author, b.publisher, b.qty);
+         }
+ 
+         // Print table footer
+         System.out.println("+----+-------------+--------------+----------------+-----+");
+     }
     
 }
 
