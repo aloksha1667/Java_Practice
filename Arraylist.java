@@ -1,27 +1,21 @@
-import java.util.ArrayList;
-import java.util.Iterator;
+import java.util.*;
 
-class Arraylist{
+public class Arraylist{
     public static void main(String[] args) {
-                ArrayList<String> list = new ArrayList<>();
-                list.add("Alok");
-                list.add("Alok");
-                list.add("Alok");
-                list.add("amit");
-                list.add("ankita");
-                System.out.println(list);   // list get in array
-        
-                // Traversing list through Iterator
-                Iterator<String> itr = list.iterator();
-        
-                while (itr.hasNext()) {
-                    System.out.println(itr.next());   // list get in without array 
-                }
-            
-        
-        
-    
 
+               ArrayList<Integer> numlist = new ArrayList<>();
+
+                      for (int i=1; i<=10; i++){
+
+                        numlist.add(12*i);
+
+          }
+
+         System.out.println("numberlist :" + numlist);
+        
+    }
+
+ }
 
         // get list without duplicate 
         // hashset not allowed duplicate element
@@ -50,7 +44,3 @@ class Arraylist{
 
 
         // System.out.println(list);
-
-    }
-        
-}
